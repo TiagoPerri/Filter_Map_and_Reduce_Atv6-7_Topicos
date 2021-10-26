@@ -37,3 +37,11 @@ var maiorQuatro = apps.filter((app) => {
 });
 
 console.log(maiorQuatro);
+
+// EXERCICIO 3: use map() para mudar o atributo appname para lowerCase
+var lowerAppname = apps.map((app) => {
+    app.appname = app.appname.toLowerCase();
+    return app;
+});
+
+console.log(lowerAppname);
