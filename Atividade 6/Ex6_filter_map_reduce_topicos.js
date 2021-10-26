@@ -45,13 +45,12 @@ const funcionarios = [
 ];
 
 /*Implemente e envie um código em JS usando Node.js que:
-- 1º commit: Use o filter() para recuperar um array apenas com objetos da categoria 'gerente'*/
 
+- 1º commit: Use o filter() para recuperar um array apenas com objetos da categoria 'gerente'*/
 var Filtergerente = funcionarios. filter(catGerente  => (catGerente.categoria == "gerente"));  
 console.log(Filtergerente);
 
 /*- 2º commit: Use o reduce() para retornar o objeto com o menor id */
-
 var menorId = funcionarios.reduce((anterior, atual) => {
     if(atual.id < anterior.id)
         return atual;
@@ -59,3 +58,11 @@ var menorId = funcionarios.reduce((anterior, atual) => {
         return anterior;
 });
 console.log(menorId);
+
+/*- 3º commit: Use o map() para colocar todos os nomes no formato UpperCase.*/
+var colocaUpperCase = funcionarios.map((newarr) => {
+    newarr.nome = newarr.nome.toUpperCase();
+
+    return newarr;
+});
+console.log(colocaUpperCase);
