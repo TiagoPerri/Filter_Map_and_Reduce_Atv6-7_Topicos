@@ -20,3 +20,13 @@ apps = apps.map(elem => {
 console.log('Total de objetos deste array:', apps.length);
 console.log('A estrutura do 1.o objeto:');
 console.log(apps[0]);
+
+// EXERCICIO 1: use reduce() para calcular o numero total de installs para todas as apps.
+var totalInstall = apps.reduce((total, proximo) => {
+    if(isObject(total)){
+        return total.installs + proximo.installs;
+    }
+    return total += proximo.installs;
+});
+
+console.log(totalInstall);
