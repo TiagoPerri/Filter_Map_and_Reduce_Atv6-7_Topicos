@@ -30,3 +30,10 @@ var totalInstall = apps.reduce((total, proximo) => {
 });
 
 console.log(totalInstall);
+
+// EXERCICIO 2: use filter() para selecionar somente apps com score maior que quatro (> 4) 
+var maiorQuatro = apps.filter((app) => {
+    return app.score > 4
+});
+
+console.log(maiorQuatro);
