@@ -20,12 +20,3 @@ apps = apps.map(elem => {
 console.log('Total de objetos deste array:', apps.length);
 console.log('A estrutura do 1.o objeto:');
 console.log(apps[0]);
-
-// EXERCICIO 1: use reduce() para calcular o numero total de installs para todas as apps.
-
-
-// EXERCICIO 2: use filter() para selecionar somente apps com score maior que quatro (> 4) 
-
-
-// EXERCICIO 3: use map() para mudar o atributo appname para lowerCase
-
